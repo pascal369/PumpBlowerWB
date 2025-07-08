@@ -146,7 +146,7 @@ class Ui_Dialog(object):
 
          try:
              base=os.path.dirname(os.path.abspath(__file__))
-             joined_path = os.path.join(base, "Sewage_eqp_data",mypath,pic)
+             joined_path = os.path.join(base, "pumpBlower_data",mypath,pic)
              self.img.setPixmap(QtGui.QPixmap(joined_path))   
              #print(joined_path)
          except:
@@ -173,7 +173,7 @@ class Ui_Dialog(object):
                 fname=key2+'_'+key3+'.FCStd'   
             print(mypath,fname)        
             base=os.path.dirname(os.path.abspath(__file__)) 
-            joined_path = os.path.join(base, 'Sewage_eqp_data',mypath,fname) 
+            joined_path = os.path.join(base, 'pumpBlower_data',mypath,fname) 
             
             try:
                 doc=App.activeDocument()
