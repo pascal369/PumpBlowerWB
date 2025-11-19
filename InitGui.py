@@ -13,7 +13,7 @@ class PumpBlowerWBShowCommand:
         file_path = inspect.getfile(inspect.currentframe())
         module_path=os.path.dirname(file_path)
         return { 
-          'Pixmap': os.path.join(module_path, "icons", "Pump.svg"),
+          'Pixmap': os.path.join(module_path, "icons", "pump.svg"),
           'MenuText': "PumpBlowerWB",
           'ToolTip': "Show/Hide PumpBlowerWB"}
 
@@ -37,7 +37,7 @@ class PumpBlowerWB(FreeCADGui.Workbench):
     def __init__(self):
         file_path = inspect.getfile(inspect.currentframe())
         module_path=os.path.dirname(file_path)
-        self.__class__.Icon = os.path.join(module_path, "icons", "Pump.svg")
+        self.__class__.Icon = os.path.join(module_path, "icons", "pump.svg")
         self.__class__.MenuText = "PumpBlowerWB"
         self.__class__.ToolTip = "PumpBlowerWB by Pascal"
 
@@ -60,5 +60,5 @@ class PumpBlowerWB(FreeCADGui.Workbench):
     def GetClassName(self): 
         return "Gui::PythonWorkbench"
 FreeCADGui.addWorkbench(PumpBlowerWB())
-FreeCADGui.addCommand("PumpBlowerLibrary_Show", PumpBlowerWBShowCommand())
+FreeCADGui.addCommand("PumpBlowerWB_Show", PumpBlowerWBShowCommand())
 

@@ -28,26 +28,29 @@ class Ui_Dialog(object):
         
         #Eqp
         self.label_Eqp = QtGui.QLabel('Equipment',Dialog)
-        self.label_Eqp.setGeometry(QtCore.QRect(10, 13, 100, 12))
+        self.label_Eqp.setGeometry(QtCore.QRect(10, 13, 100, 22))
+        self.label_Eqp.setStyleSheet("color: black;")
         self.comboBox_Eqp = QtGui.QComboBox(Dialog)
-        self.comboBox_Eqp.setGeometry(QtCore.QRect(80, 10, 200, 22))
+        self.comboBox_Eqp.setGeometry(QtCore.QRect(80, 8, 200, 22))
         #Type
         self.label_Type = QtGui.QLabel('Type',Dialog)
-        self.label_Type.setGeometry(QtCore.QRect(10, 38, 100, 12))
+        self.label_Type.setGeometry(QtCore.QRect(10, 38, 100, 22))
+        self.label_Type.setStyleSheet("color: black;")
         self.comboBox_Type = QtGui.QComboBox(Dialog)
         self.comboBox_Type.setGeometry(QtCore.QRect(80, 35, 200, 22))
         #Series
         self.label_Series = QtGui.QLabel('Series',Dialog)
-        self.label_Series.setGeometry(QtCore.QRect(10, 63, 100, 12))
+        self.label_Series.setGeometry(QtCore.QRect(10, 63, 100, 22))
+        self.label_Series.setStyleSheet("color: black;")
         self.comboBox_Series = QtGui.QComboBox(Dialog)
-        self.comboBox_Series.setGeometry(QtCore.QRect(80, 60, 200, 22))
+        self.comboBox_Series.setGeometry(QtCore.QRect(80, 63, 200, 22))
 
         #実行
         self.pushButton = QtGui.QPushButton('Educution',Dialog)
-        self.pushButton.setGeometry(QtCore.QRect(80, 85, 100, 22))
+        self.pushButton.setGeometry(QtCore.QRect(80, 95, 100, 22))
         #tool
-        self.pushButton2 = QtGui.QPushButton('Tool',Dialog)
-        self.pushButton2.setGeometry(QtCore.QRect(170, 85, 100, 22))
+        #self.pushButton2 = QtGui.QPushButton('Tool',Dialog)
+        #self.pushButton2.setGeometry(QtCore.QRect(170, 85, 100, 22))
 
         #img
         self.img = QtGui.QLabel(Dialog)
@@ -191,5 +194,6 @@ class main():
         d.ui.setupUi(d)
         d.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
         d.show() 
+        
         
            
